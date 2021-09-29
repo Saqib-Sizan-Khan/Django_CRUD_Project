@@ -44,7 +44,7 @@
                                         <a href="{% url 'core:edit' post.pk %}" class="btn btn-md btn-outline-warning" role="button" aria-pressed="true">Edit</a>
                                         <a href="{% url 'core:delete' post.pk %}" class="btn btn-md btn-outline-danger" role="button" aria-pressed="true">Delete</a>
                                     </div>
-                                    <small class="text-muted">9 mins</small>
+                                    <small class="text-muted">{{ post.published }}</small>
                                 </div>
                             </div>
                         </div>
