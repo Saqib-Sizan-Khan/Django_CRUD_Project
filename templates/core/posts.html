@@ -12,7 +12,7 @@
 {#        </div>#}
 {#    </nav>#}
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-info">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Post Administration</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,7 +34,6 @@
                 {% for post in post_list %}
                     <div class="col-md-4">
                         <div class="card mb-4 box-shadow">
-                            <img class="card-img-top" src="https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832__480.jpg" alt="Card image Cap">
                             <div class="card-body">
                                 <h4 style="font-weight: bold;color: darkmagenta" class="lead">{{ post.title }}</h4>
                                 <p class="card-text"></p>
@@ -44,7 +43,7 @@
                                         <a href="{% url 'core:edit' post.pk %}" class="btn btn-md btn-outline-warning" role="button" aria-pressed="true">Edit</a>
                                         <a href="{% url 'core:delete' post.pk %}" class="btn btn-md btn-outline-danger" role="button" aria-pressed="true">Delete</a>
                                     </div>
-                                    <small class="text-muted">{{ post.published }}</small>
+
                                 </div>
                             </div>
                         </div>
